@@ -1,24 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TimeComp from './TimeComp/TimeComp.jsx'
+import PicComp from './PicComp/PicComp.jsx'
+//import ToDoItem from './components/ToDoItem/ToDoItem';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Place holder for the comp </p>
+      <div className="PicPlacement">    
+        <PicComp></PicComp>
+      </div>
+      <div className="TimePlacement">    
+        <TimeComp></TimeComp>
+      </div>
+
     </div>
   );
 }
