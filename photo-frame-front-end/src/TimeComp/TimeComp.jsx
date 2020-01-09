@@ -38,10 +38,20 @@ class TimeComp extends PureComponent {
     clearInterval(this.interval);
   }
 
+  pad2dig(x){
+    var retVal=x<10?("0"+x):x;
+    return retVal
+  }
+
+
   render () {
 
   var today = new Date();
-  var timeNow = (today.getHours()>12?today.getHours()-12:today.getHours()) + ':' + today.getMinutes() +':' + today.getSeconds() + '  '+ (today.getHours()>12?'PM':'AM');
+  var hrs= (today.getHours()>12?today.getHours()-12:today.getHours());
+  var mns= today.getMinutes() ;
+  var secs= today.getSeconds();
+  var am_pm= (today.getHours()>12?'PM':'AM');
+  var timeNow = this.pad2dig(hrs) + ':' + this.pad2dig(mns)+':' + this.pad2dig(secs) + '  '+ am_pm;
 
     if (this.state.hasError) {
       return <h1>Something went wrong.</h1>;
