@@ -1,0 +1,3 @@
+/pics/3.jpg
+/pics/1.jpg
+/pics/2.jpg

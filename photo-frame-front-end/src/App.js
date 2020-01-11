@@ -8,7 +8,6 @@ import PicComp from './PicComp/PicComp.jsx'
 function App() {
   return (
     <div className="App">
-      <p>Place holder for the comp </p>
       <div className="PicPlacement">    
         <PicComp></PicComp>
       </div>
